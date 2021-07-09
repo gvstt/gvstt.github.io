@@ -4,4 +4,4 @@ title: "Gustavo Olimpio lança site"
 date: 2021-07-09
 ---
 
-Bem-vindo ao meu site. =)
+Bem-vindo ao meu site!
