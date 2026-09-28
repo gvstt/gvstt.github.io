@@ -606,3 +606,336 @@ footer {
     }
 
 }
+
+/* =========================================================
+   GUSTAVO OLIMPIO — COLOR PALETTE
+   Moss / Sage / Warm Neutral
+========================================================= */
+
+:root {
+    --background: #eae4da;
+    --surface: #f5f1e8;
+
+    --text: #1d211a;
+    --muted: #707565;
+
+    --border: #929985;
+
+    --moss: #4f5d3a;
+    --moss-dark: #303825;
+    --moss-light: #cbd2bd;
+
+    --cream: #f5f1e8;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection {
+    background: var(--moss);
+    color: var(--cream);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar a {
+    color: var(--text);
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.navbar a:hover {
+    color: var(--moss);
+}
+
+
+.navbar a::after {
+    background: var(--moss);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    border-color: var(--moss-dark);
+}
+
+
+.eyebrow {
+    color: var(--moss);
+
+    letter-spacing: 0.15em;
+}
+
+
+.hero h1 {
+    color: var(--text);
+}
+
+
+.intro {
+    color: var(--text);
+}
+
+
+.location {
+    color: var(--muted);
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links a {
+    color: var(--moss-dark);
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.social-links a:hover {
+    color: var(--moss);
+
+    border-color: var(--moss);
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    background: var(--moss-light);
+}
+
+
+.hero-image img {
+    filter:
+        saturate(0.72)
+        contrast(0.96);
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+    border-color: var(--border);
+}
+
+
+.section-heading span {
+    color: var(--moss);
+
+    font-weight: 700;
+}
+
+
+.section-heading h2 {
+    color: var(--text);
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid {
+    background: var(--border);
+
+    border-color: var(--border);
+}
+
+
+.project-card {
+    background: var(--background);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.project-number {
+    color: var(--moss);
+}
+
+
+.project-card h3 {
+    color: var(--text);
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.project-card p {
+    color: var(--muted);
+
+    transition:
+        color 0.3s ease;
+}
+
+
+/* Tags */
+
+.tags span {
+    border-color: var(--border);
+
+    color: var(--moss-dark);
+
+    transition:
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.project-link {
+    color: var(--moss-dark);
+
+    transition:
+        color 0.3s ease;
+}
+
+
+/* PROJECT HOVER */
+
+.project-card:hover {
+    background: var(--moss);
+    color: var(--cream);
+}
+
+
+.project-card:hover h3 {
+    color: var(--cream);
+}
+
+
+.project-card:hover p {
+    color: var(--moss-light);
+}
+
+
+.project-card:hover .project-number {
+    color: var(--moss-light);
+}
+
+
+.project-card:hover .tags span {
+    color: var(--cream);
+
+    border-color:
+        rgba(245, 241, 232, 0.55);
+}
+
+
+.project-card:hover .project-link {
+    color: var(--cream);
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-list {
+    border-color: var(--border);
+}
+
+
+.experience-item {
+    border-color: var(--border);
+}
+
+
+.experience-date {
+    color: var(--moss);
+}
+
+
+.experience-item h3 {
+    color: var(--text);
+}
+
+
+.company {
+    color: var(--moss-dark);
+}
+
+
+.experience-item p:last-child {
+    color: var(--muted);
+}
+
+
+/* =========================
+   NOTES
+========================= */
+
+.note {
+    border-color: var(--border);
+
+    background: transparent;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.note span {
+    color: var(--moss);
+}
+
+
+.note:hover {
+    background: var(--moss-dark);
+
+    color: var(--cream);
+
+    border-color: var(--moss-dark);
+}
+
+
+.note:hover span {
+    color: var(--moss-light);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-color: var(--border);
+
+    color: var(--muted);
+}
+
+.dot {
+    color: var(--moss);
+}
