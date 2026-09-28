@@ -117,9 +117,15 @@ a {
 ========================= */
 
 .hero {
-    border: 1px solid var(--border);
+    background: var(--surface);
 
-    padding: 14px;
+    border:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.18);
 }
 
 
@@ -1267,4 +1273,379 @@ footer {
     border-color: var(--moss);
 
     color: var(--muted);
+}
+
+/* =========================================================
+   DARK MOSS THEME
+   Paste at the VERY END of style.css
+========================================================= */
+
+:root {
+    --background: #11140f;
+    --surface: #171c14;
+    --surface-light: #1e251a;
+
+    --text: #f0ede5;
+    --muted: #a5ac9a;
+
+    --moss: #65764d;
+    --moss-light: #9ead8b;
+    --sage: #c4cdb6;
+
+    --border: #46503b;
+    --border-soft: #30392a;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+
+::selection {
+    background: var(--moss);
+    color: var(--text);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar a {
+    color: var(--sage);
+}
+
+
+.navbar a:hover {
+    color: var(--text);
+}
+
+
+.navbar a::after {
+    background: var(--moss-light);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+
+.hero-text {
+    background: var(--surface);
+}
+
+
+.eyebrow {
+    color: var(--moss-light) !important;
+}
+
+
+.hero h1 {
+    color: var(--text);
+}
+
+
+.dot {
+    color: var(--moss-light);
+}
+
+
+.intro {
+    color: var(--text);
+}
+
+
+.location {
+    color: var(--sage);
+}
+
+
+/* =========================
+   HERO LINKS
+========================= */
+
+.social-links a {
+    color: var(--muted);
+}
+
+
+.social-links a:hover {
+    color: var(--moss-light);
+    border-color: var(--moss-light);
+}
+
+
+/* =========================
+   HERO VISUAL / PLACEHOLDER
+========================= */
+
+.hero-image {
+    position: relative;
+
+    background: var(--moss);
+
+    padding: 18px;
+
+    overflow: hidden;
+}
+
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 18px;
+
+    background: var(--moss);
+
+    mix-blend-mode: color;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    filter:
+        grayscale(1)
+        brightness(0.75)
+        contrast(1.08);
+
+    border: 1px solid var(--moss-light);
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+    border-bottom: 1px solid var(--border);
+}
+
+
+.section-heading span {
+    color: var(--moss-light);
+}
+
+
+.section-heading h2 {
+    color: var(--text);
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid {
+    background: var(--border);
+    border-color: var(--border);
+}
+
+
+.project-card {
+    background: var(--surface);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.project-number {
+    color: var(--moss-light);
+}
+
+
+.project-card h3 {
+    color: var(--text);
+}
+
+
+.project-card p {
+    color: var(--muted);
+}
+
+
+.tags span {
+    color: var(--sage);
+
+    border-color: var(--border);
+}
+
+
+.project-link {
+    color: var(--moss-light);
+}
+
+
+/* PROJECT HOVER */
+
+.project-card:hover {
+    background: var(--moss);
+
+    transform: translateY(-3px);
+}
+
+
+.project-card:hover h3 {
+    color: #ffffff;
+}
+
+
+.project-card:hover p {
+    color: #e0e5d8;
+}
+
+
+.project-card:hover .project-number {
+    color: #dce5cf;
+}
+
+
+.project-card:hover .tags span {
+    color: #ffffff;
+
+    border-color:
+        rgba(255, 255, 255, 0.35);
+}
+
+
+.project-card:hover .project-link {
+    color: #ffffff;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-list {
+    border-color: var(--border);
+}
+
+
+.experience-item {
+    border-color: var(--border-soft);
+}
+
+
+.experience-date {
+    color: var(--moss-light);
+}
+
+
+.experience-item h3 {
+    color: var(--text);
+}
+
+
+.company {
+    color: var(--sage);
+}
+
+
+.experience-item p:last-child {
+    color: var(--muted);
+}
+
+
+/* =========================
+   NOTES
+========================= */
+
+.note {
+    background: var(--surface);
+
+    border-color: var(--border);
+
+    color: var(--text);
+}
+
+
+.note span {
+    color: var(--moss-light);
+}
+
+
+.note p {
+    color: var(--muted);
+}
+
+
+.note:hover {
+    background: var(--moss);
+
+    border-color: var(--moss);
+
+    color: white;
+}
+
+
+.note:hover span {
+    color: #dce5cf;
+}
+
+
+.note:hover p {
+    color: #e0e5d8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-color: var(--border);
+
+    color: var(--muted);
+}
+
+
+/* =========================
+   VERY SUBTLE PAGE GLOW
+========================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 550px;
+    height: 550px;
+
+    top: -300px;
+    right: -200px;
+
+    background: rgba(101, 118, 77, 0.10);
+
+    filter: blur(100px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -1;
 }
