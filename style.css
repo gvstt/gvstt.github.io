@@ -130,16 +130,18 @@ a {
 
 
 .hero-content {
-    height: auto;
+    height: 490px;
+    min-height: 0;
 }
 
 .hero-text {
-    height: auto;
-    min-height: 400px;
+    height: 100%;
+    padding: 34px 42px 28px 42px;
 }
 
 .hero-image {
-    height: 420px;
+    height: 100%;
+    min-height: 0;
 }
 
 .hero-image img {
@@ -564,23 +566,18 @@ footer {
     }
 
 
-    .hero-content {
-        grid-template-columns: 1fr;
-    }
+.hero-content {
+    height: auto;
+}
 
+.hero-text {
+    height: auto;
+    min-height: 400px;
+}
 
-    .hero-text {
-        min-height: 420px;
-
-        padding:
-            32px
-            25px;
-    }
-
-
-    .hero-image {
-        min-height: 420px;
-    }
+.hero-image {
+    height: 420px;
+}
 
 
     .projects-grid {
